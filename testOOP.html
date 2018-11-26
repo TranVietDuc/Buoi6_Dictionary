@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function human(height,weight)
+    {
+        this.height = height;
+        this.weight = weight;
+        this.informBMI = function (height,weight) {
+            let bmi = weight / (height * height);
+            if (bmi < 18.5) alert("Thin");
+            else if (bmi <= 24.9 && bmi >= 18.5) alert("Normal");
+            else alert("Fat");
+        }
+    }
+    var myBMI = new human (70,1.73);
+    myBMI.informBMI();
+</script>
+</body>
+</html>

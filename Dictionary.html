@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Eng =["dog","cat","mouse","bird","super man"];
+    var Viet = ["Chó","Mèo","Chuột","Chim","Siêu Nhân"];
+    while (1)
+    {
+        let word = prompt("Insert a Eng Word");
+        for ( let i =0; i< Eng.length; i++){
+            if (word == Eng[i]){
+                alert("Result in vietnamese: " + Viet[i]);
+                break;
+            }
+        }
+        alert("We don't have this word");
+
+    }
+</script>
+</body>
+</html>
